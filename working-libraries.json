@@ -1,0 +1,208 @@
+        {
+                "title" : "lz4",
+                "location" : "mfbt/lz4",
+
+                "latest_version_fetch_type" : "github_rss",
+                "latest_version_fetch_location" : "https://github.com/lz4/lz4",
+
+                "current_version_fetch_type" : "html_re",
+                "current_version_fetch_location" : "https://hg.mozilla.org/mozilla-central/raw-file/tip/mfbt/lz4.h",
+                "current_version_re" : "Version: ([0-9.]+)"
+				#define LZ4_VERSION_MAJOR    1    /* for major interface/format changes  */
+				#define LZ4_VERSION_MINOR    2    /* for minor interface/format changes  */
+				#define LZ4_VERSION_RELEASE  0    /* for tweaks, bug-fixes, or development */
+		},        
+ gfx/webrender | in http://searchfox.org/mozilla-central/source/gfx/webrender/Cargo.toml version = "0.48.0" also listing versions for multiple other packages. Check to see if up to date
+#       https://github.com/servo/webrender from link above
+#       upstream version: https://github.com/servo/webrender/blob/master/webrender/Cargo.toml
+#       looks like this and the mozilla central very closely reflect each other. Same versions right now.		
+		{
+                "title" : "webrender",
+                "location" : "gfx/webrender",
+
+                "latest_version_fetch_type" : "html_re",
+                "latest_version_fetch_location" : "",
+                "latest_version_re" : ""
+
+                "current_version_fetch_type" : "",
+                "current_version_fetch_location" : "https://hg.mozilla.org/mozilla-central/raw-file/tip/",
+                "current_version_re" : "Version: ([0-9.]+)"
+		},
+# | gfx/webrender_traits | ? should this read api instead of traits? No traits in searchfox, but found this https://github.com/servo/webrender/blob/v0.6.0/webrender_traits/Cargo.toml
+		{
+                "title" : "gfx/webrender_traits",
+                "location" : "",
+
+                "latest_version_fetch_type" : "html_re",
+                "latest_version_fetch_location" : "",
+                "latest_version_re" : ""
+
+                "current_version_fetch_type" : "",
+                "current_version_fetch_location" : "https://hg.mozilla.org/mozilla-central/raw-file/tip/",
+                "current_version_re" : "Version: ([0-9.]+)"
+		},
+#hyphen and libevent (ipc/chromium already checked)
+		{
+                "title" : "",
+                "location" : "",
+
+                "latest_version_fetch_type" : "html_re",
+                "latest_version_fetch_location" : "",
+                "latest_version_re" : ""
+
+                "current_version_fetch_type" : "",
+                "current_version_fetch_location" : "https://hg.mozilla.org/mozilla-central/raw-file/tip/",
+                "current_version_re" : "Version: ([0-9.]+)"
+		},
+		{
+                "title" : "libvorbis",
+                "location" : "media/libvorbis",
+				#The upstream version used was vorbis v1.3.5-48-ge5b1378 from https://git.xiph.org/vorbis.git
+                "latest_version_fetch_type" : "html_re",
+                "latest_version_fetch_location" : "",
+                "latest_version_re" : ""
+
+                "current_version_fetch_type" : "",
+                "current_version_fetch_location" : "https://hg.mozilla.org/mozilla-central/raw-file/tip/media/libvorbis/README_MOZILLA",
+                "current_version_re" : "Version: ([0-9.]+)"
+		},
+		{
+                "title" : "libtremor",
+                "location" : "media/libtremor",
+				#https://svn.xiph.org/trunk/Tremor/ ? "The subversion revision used was r17547"
+                "latest_version_fetch_type" : "html_re",
+                "latest_version_fetch_location" : "",
+                "latest_version_re" : ""
+
+                "current_version_fetch_type" : "",
+                "current_version_fetch_location" : "https://hg.mozilla.org/mozilla-central/raw-file/tip/media/libtremor/README_MOZILLA",
+                "current_version_re" : "Version: ([0-9.]+)"
+		},
+		{
+                "title" : "mtransport third party nICER",
+                "location" : "media/mtransport/third_party/nICEr/README_MOZILLA",
+				#SVN revision 9873 https://svn.resiprocate.org/rep/resiprocate/main/nICEr changes made and sent for upstreaming.
+                #from an adobe project, finished in 2008. Looks like active maintenance is from mozilla in moz-central.
+				"latest_version_fetch_type" : "html_re",
+                "latest_version_fetch_location" : "",
+                "latest_version_re" : ""
+				
+                "current_version_fetch_type" : "",
+                "current_version_fetch_location" : "https://hg.mozilla.org/mozilla-central/raw-file/tip/media/mtransport/third_party/nICEr/README_MOZILLA",
+                "current_version_re" : "Version: ([0-9.]+)"
+		},
+		{
+                "title" : "mtransport third party",
+                "location" : "nrappkit",
+				
+                "latest_version_fetch_type" : "html_re",
+                "latest_version_fetch_location" : "",
+                "latest_version_re" : ""
+
+                "current_version_fetch_type" : "",
+                "current_version_fetch_location" : "https://hg.mozilla.org/mozilla-central/raw-file/tip/media/mtransport/third_party/nrappkit/README_MOZILLA",
+                "current_version_re" : "Version: ([0-9.]+)"
+		},
+		{
+                "title" : "openmax_dl",
+                "location" : "media/openmax_dl",
+				#online repo: https://silver.arm.com/download/Software/Graphics/OX000-BU-00010-r1p0-00bet0/OX000-BU-00010-r1p0-00bet0.tgz
+				#todo find updated version that google maintains.
+                "latest_version_fetch_type" : "html_re",
+                "latest_version_fetch_location" : "",
+                "latest_version_re" : ""
+
+                "current_version_fetch_type" : "",
+                "current_version_fetch_location" : "https://hg.mozilla.org/mozilla-central/raw-file/tip/media/openmax_dl/README.chromium",
+				#not a version, but includes a bugfix: https://hg.mozilla.org/mozilla-central/raw-file/tip/media/openmax_dl/README.mozilla",
+                "current_version_re" : "Version: ([0-9.]+)"
+		},
+		{
+                "title" : "pocketsphinx",
+                "location" : "media/pocketsphinx",
+				#not finding the version http://searchfox.org/mozilla-central/source/media/pocketsphinx | update.sh just copies in code from local dir.
+				#       that's because there isn't really one, actively updated: https://github.com/cmusphinx/pocketsphinx
+				#       slightly more stable release (prealpha?) https://sourceforge.net/projects/cmusphinx/files/pocketsphinx/5prealpha/
+				#       more info here: https://cmusphinx.github.io/wiki/download/
+				#       looks like latest release is 2016. Latest moz code update appears to be 2015. Probably slightly out of date. No security focus I've seen.
+                "latest_version_fetch_type" : "html_re",
+                "latest_version_fetch_location" : "",
+                "latest_version_re" : ""
+
+                "current_version_fetch_type" : "",
+                "current_version_fetch_location" : "https://hg.mozilla.org/mozilla-central/raw-file/tip/media/pocketsphinx",
+                "current_version_re" : "Version: ([0-9.]+)"
+		},
+		{
+                "title" : "sphinxbase",
+                "location" : "media/sphinxbase",
+				#related project to pocketsphinx: https://github.com/cmusphinx/sphinxbase
+                "latest_version_fetch_type" : "html_re",
+                "latest_version_fetch_location" : "",
+                "latest_version_re" : ""
+				#version based on date.
+                "current_version_fetch_type" : "",
+                "current_version_fetch_location" : "https://hg.mozilla.org/mozilla-central/raw-file/tip/media/sphinxbase",
+                "current_version_re" : "Version: ([0-9.]+)"
+		},
+		{
+                "title" : "decimal",
+                "location" : "mfbt/decimal",
+				#from the update script: LATEST_SHA=$(git ls-remote https://chromium.googlesource.com/chromium/src.git/ | awk "/refs\/heads\/master/ {print \$1}")
+				#REPO_PATH="https://chromium.googlesource.com/chromium/src.git/+/$LATEST_SHA/third_party/WebKit/Source/platform"
+                "latest_version_fetch_type" : "html_re",
+                "latest_version_fetch_location" : "",
+                "latest_version_re" : ""
+
+                "current_version_fetch_type" : "",
+                "current_version_fetch_location" : "https://hg.mozilla.org/mozilla-central/raw-file/tip/mfbt/decimal/UPSTREAM-GIT-SHA",
+				#cad4c9e3b3c9e80bb189059373db528272bca96f
+                "current_version_re" : "Version: ([0-9.]+)"
+		},
+		
+#to add here
+# | mobile/android/thirdparty/ | multiple, todo
+# | modules/libmar | this isn't third party. Mozilla made it as per https://wiki.mozilla.org/Software_Update:MAR . It should definitely be fuzzed though
+# | nsprpub/ | http://searchfox.org/mozilla-central/source/nsprpub/TAG-INFO
+#       https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSPR/NSPR_release_procedure spot checkes configure, and it gave same version major/min/minor
+#       http://searchfox.org/mozilla-central/source/nsprpub/pr/include/prinit.h | #define PR_VERSION  "4.16"
+# | media/webrtc/signaling/src/sdp/sipcc | todo, later
+# | other-licenses/
+# | parser/expat/
+# | security/sandbox/chromium/
+# | testing/gtest/gmock/
+# | testing/gtest/gtest/
+# | toolkit/components/protobuf/
+
+#added here, need to finish up
+# | media/sphinxbase | http://searchfox.org/mozilla-central/source/media/sphinxbase | last updated in 2015
+#       same project as above: https://github.com/cmusphinx/sphinxbase or https://sourceforge.net/projects/cmusphinx/files/sphinxbase/5prealpha/
+# | mfbt/decimal | http://searchfox.org/mozilla-central/source/mfbt/decimal/UPSTREAM-GIT-SHA cad4c9e3b3c9e80bb189059373db528272bca96f
+#       from the update script: LATEST_SHA=$(git ls-remote https://chromium.googlesource.com/chromium/src.git/ | awk "/refs\/heads\/master/ {print \$1}")
+#                               REPO_PATH="https://chromium.googlesource.com/chromium/src.git/+/$LATEST_SHA/third_party/WebKit/Source/platform"
+# | mfbt/lz4 | http://searchfox.org/mozilla-central/source/mfbt/lz4.h version is 1.2.0
+#       says latest code rep is http://code.google.com/p/lz4/, which redirects to the github https://github.com/lz4/lz4
+#       current version is https://github.com/lz4/lz4/blob/dev/lib/lz4.h 1.8.0, current release in git tag is 1.7.5		
+# | media/libtremor | http://searchfox.org/mozilla-central/source/media/libtremor/README_MOZILLA
+#       https://svn.xiph.org/trunk/Tremor/ ? "The subversion revision used was r17547"
+# | media/libvorbis | http://searchfox.org/mozilla-central/source/media/libvorbis/README_MOZILLA
+#		he upstream version used was vorbis v1.3.5-48-ge5b1378 from https://git.xiph.org/vorbis.git
+# | media/mtransport/third_party |
+#       nICEr | http://searchfox.org/mozilla-central/source/media/mtransport/third_party/nICEr/README_MOZILLA
+#               SVN revision 9873 https://svn.resiprocate.org/rep/resiprocate/main/nICEr changes made and sent for upstreaming.
+#       nrappkit | http://searchfox.org/mozilla-central/source/media/mtransport/third_party/nrappkit/README_MOZILLA | multiple parts to this, no version in readme_mozilla
+#		**red flag for being so old: The last revision included in this import was on Nov 25, 2008.
+#			This import includes a small nunber of portability fixes that
+#			have been submitted to the upstream repository and are included
+#			in upstream.diff.
+#		Date compare latest with Nov 25, 2008 ? 
+# | media/openmax_dl | http://searchfox.org/mozilla-central/source/media/openmax_dl/README.mozilla (not a version, just a bug note for mozilla)
+#       version: http://searchfox.org/mozilla-central/source/media/openmax_dl/README.chromium
+#       online repo: https://silver.arm.com/download/Software/Graphics/OX000-BU-00010-r1p0-00bet0/OX000-BU-00010-r1p0-00bet0.tgz
+#       todo find updated version that google maintains.
+# | media/pocketsphinx | not finding the version http://searchfox.org/mozilla-central/source/media/pocketsphinx | update.sh just copies in code from local dir.
+#       that's because there isn't really one, actively updated: https://github.com/cmusphinx/pocketsphinx
+#       slightly more stable release (prealpha?) https://sourceforge.net/projects/cmusphinx/files/pocketsphinx/5prealpha/
+#       more info here: https://cmusphinx.github.io/wiki/download/
+#       looks like latest release is 2016. Latest moz code update appears to be 2015. Probably slightly out of date. No security focus I've seen.
+
